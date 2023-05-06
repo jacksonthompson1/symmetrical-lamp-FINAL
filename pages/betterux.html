@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- <link rel="stylesheet" type="text/css" href="../css/betterstyle.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 	<style>
         body {
     font-family: Verdana, sans-serif;
@@ -16,12 +16,13 @@
     background-color: #ff6600;
     color: #fff;
     padding: 10px;
+    
 }
-#header a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
+/* #header a { */
+    /* color: #fff; */
+    /* text-decoration: none; */
+    /* font-weight: bold; */
+/* } */
 #header a:hover {
     text-decoration: underline;
 }
@@ -79,6 +80,22 @@
     font-size: 0.9em;
     color: #999;
 }
+#headerText {
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+.hackT {
+    
+    font-weight: bold;
+    color: black; 
+}
+#afterT {
+    color: white;
+}
+#item .comments {
+    color: black;
+}
     </style>
 </head>
 <body>
@@ -96,23 +113,40 @@
       </nav>
       
 	<div id="header">
-		<a href="/">Hacker News</a>
+        <div id="headerText">
+		<a href="/" class='hackT'>Hacker News</a>
+        <a href="#" id="afterT">new</a>
+        |
+        <a href="#" id="afterT">past</a>
+        |
+        <a href="#" id="afterT">comments</a>
+        |
+        <a href="#" id="afterT">ask</a>
+        |
+        <a href="#" id="afterT">show</a>
+        </div>
 	</div>
 	<div id="content">
-		<div id="title">Hacker News</div>
-		<div id="subtitle">news aggregator</div>
+		<!-- <div id="title">Hacker News</div> -->
+		<!-- <div id="subtitle">news aggregator</div> -->
 		<div id="item">
 			<span class="score">123 points</span>
-			<a class="title" href="#">Title of the first article</a>
+			<a class="title" href="#">*Example Article*</a>
 			<span class="info">by <a href="#">username</a> 1 hour ago</span>
-			<span class="comments">123 comments</span>
+			<a href="#" class="comments">123 comments</a>
 		</div>
 		<div id="item">
 			<span class="score">456 points</span>
-			<a class="title" href="#">Title of the second article</a>
+			<a class="title" href="#">*Example Article*</a>
 			<span class="info">by <a href="#">username</a> 2 hours ago</span>
-			<span class="comments">456 comments</span>
+			<a href="#" class="comments">456 comments</a>
 		</div>
+        <div id="explanation">
+            <br>
+            <ul>
+                <li>This small examples resembles the original site, but spaces things out a bit and is much more readable.</li>
+            </ul>
+        </div>
 		<!-- repeat the item div for each article -->
 	</div>
 </body>
