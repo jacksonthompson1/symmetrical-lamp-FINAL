@@ -7,12 +7,13 @@ body {
     background-color: #ff6600;
     color: #fff;
     padding: 10px;
+    
 }
-#header a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
+/* #header a { */
+    /* color: #fff; */
+    /* text-decoration: none; */
+    /* font-weight: bold; */
+/* } */
 #header a:hover {
     text-decoration: underline;
 }
@@ -70,3 +71,20 @@ body {
     font-size: 0.9em;
     color: #999;
 }
+#headerText {
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+.hackT {
+    
+    font-weight: bold;
+    color: black; 
+}
+#afterT {
+    color: white;
+}
+#item .comments {
+    color: black;
+}
+    
